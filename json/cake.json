@@ -1,0 +1,105 @@
+{
+  "banner": [
+    "../bannerImg/1.jpg",
+    "../bannerImg/2.jpg",
+    "../bannerImg/3.jpg"
+  ],
+  "list": [
+    {
+      "id": "001",
+      "name": "雪域牛乳芝士·特浓",
+      "title": "甄选澳洲A2全脂鲜牛奶浓醇升级",
+      "price": "298",
+      "urlA": "../indexImg/1.jpg",
+      "delUrl": "../delImg/1.jpg"
+    },
+    {
+      "id": "002",
+      "name": "奇遇圣诞",
+      "title": "斑斓烛光旋转，尽享圣诞绮梦",
+      "price": "398",
+      "urlA": "../indexImg/2.jpg",
+      "delUrl": "../delImg/2.jpg"
+    },
+    {
+      "id": "003",
+      "name": "断层蛋糕",
+      "title": "风靡ins滋养C味有颜又有料",
+      "price": "258",
+      "urlA": "../indexImg/3.jpg",
+      "delUrl": "../delImg/3.jpg"
+    },
+    {
+      "id": "004",
+      "name": "环游世界",
+      "title": "五星好评9种口味一次过瘾",
+      "price": "258",
+      "urlA": "../indexImg/4.jpg",
+      "delUrl": "../delImg/4.jpg"
+    },
+    {
+      "id": "005",
+      "name": "数字蛋糕",
+      "title": "人见人爱ins网红明星同款",
+      "price": "218",
+      "urlA": "../indexImg/5.jpg",
+      "delUrl": "../delImg/5.jpg"
+    },
+    {
+      "id": "006",
+      "name": "草莓拿破仑",
+      "title": "薄脆酥皮搭配清甜草莓",
+      "price": "218",
+      "urlA": "../indexImg/6.jpg",
+      "delUrl": "../delImg/6.jpg"
+    },
+    {
+      "id": "007",
+      "name": "咸蛋皇",
+      "title": "芝士慕斯蛋糕",
+      "price": "258",
+      "urlA": "../indexImg/7.jpg",
+      "delUrl": "../delImg/7.jpg"
+    },
+    {
+      "id": "008",
+      "name": "巧克力松露",
+      "title": "巧克力爱好者的福音",
+      "price": "218",
+      "urlA": "../indexImg/8.jpg",
+      "delUrl": "../delImg/8.jpg"
+    },
+    {
+      "id": "009",
+      "name": "果然倾心",
+      "title": "迷上缤纷果香滋味",
+      "price": "218",
+      "urlA": "../indexImg/9.jpg",
+      "delUrl": "../delImg/9.jpg"
+    },
+    {
+      "id": "010",
+      "name": "茶草京都",
+      "title": "抹茶控京都寻味草色茶香自悠然",
+      "price": "218",
+      "urlA": "../indexImg/10.jpg",
+      "delUrl": "../delImg/10.jpg"
+    },
+    {
+      "id": "011",
+      "name": "寿桃喜",
+      "title": "拉起福寿喜气贺词切心低甜木糖醇",
+      "price": "388",
+      "urlA": "../indexImg/11.jpg",
+      "delUrl": "../delImg/11.jpg"
+    },
+    {
+      "id": "012",
+      "name": "公主",
+      "title": "少女心爆棚甜美公主必选",
+      "price": "218",
+      "urlA": "../indexImg/12.jpg",
+      "delUrl": "../delImg/12.jpg"
+    }
+  ]
+}

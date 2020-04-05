@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/列表.css" />
+</head>
+
+<body>
+    <header>
+        <ul class="headerleft">
+            <li>
+                <img src="../img/logo.png" />
+            </li>
+            <li onclick="shouye()">
+                首页
+            </li>
+            <li onclick="biao()">蛋糕</li>
+            <li onclick="show()">元气早餐</li>
+
+            <li>甜点心礼</li>
+            <li>
+                合作专区
+                <div class="ert">
+                    <a href="yihang.html">
+                        <p>银行活动</p>
+                    </a>
+                    <a href="cha.html">
+                        <p>企业采购</p>
+                    </a>
+                    <p>大客户区</p>
+                </div>
+            </li>
+            <li>立即兑换</li>
+            <li class="ifiea">
+                我的诺心
+                <div class="ifie">
+                    <a href="huodong.html">
+                        <p>我的aha</p>
+                    </a>
+                    <p>我的订单</p>
+                    <p>找回密码</p>
+                    <p>礼券专区</p>
+                    <p>卡券绑定</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="headerright">
+            <li>
+                <span>
+                    <img src="../img/soush.jpg" />
+                </span>
+            </li>
+
+            <li>上海</li>
+            <li>查询地址</li>
+            <li>
+                <span>
+                    <img src="../img/sousu.jpg" id="picturea" </span>
+            </li>
+            <li class="da">
+                <span>
+                    <img src="../img/ff.jpg">
+                </span>
+                <p id="sanjiang"></p>
+                <p class="sai">
+                    <a href="登录.html">
+                        <span>
+                            登录
+                        </span>
+                    </a>
+                    <span id="uio"></span>
+                    <a href="zhuce.html">
+                        <span>注册</span>
+                    </a>
+                </p>
+            </li>
+            <li>
+                <span>
+                    <img src="../img/suozi.jpg" id="picture">
+                </span>
+            </li>
+        </ul>
+    </header>
+    <div class="box">
+        <p>
+            <span1>口味：</span1>
+            <span>全部</span>
+            <span>雪域特浓</span>
+            <span>雪域口味</span>
+            <span>巧克力味</span>
+            <span>芝士口味</span>
+            <span>莫斯口味</span>
+            <span>鲜果口味</span>
+            <span>奶油口味</span>
+        </p>
+        <p>
+            <span1>规格：</span1>
+            <span>全部</span>
+            <span>2-4人食</span>
+            <span>5-8人食</span>
+            <span>10-12人食</span>
+            <span>15-20人食</span>
+        </p>
+    </div>
+    <section>
+        <!--<a href="login.html">
+            <div class="dg">
+                <div class="dga">
+                    <div class="dog">
+                        <div class="daA">
+                            <img src="../img/xueyu.jpg" alt="" />
+                        </div>
+                        <div class="pig">
+
+                        </div>
+                    </div>
+                    <ul>
+                        <li>雪域牛乳芝士·特浓</li>
+                        <li>甄选澳洲a2®全脂鲜牛奶</li>
+                    </ul>
+                    <ul>
+                        <li>￥298</li>
+                        <li>加入购物车></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </a>-->
+    </section>
+    <footer>
+        <div class="footer">
+
+            <div class="boos">
+                <div class="footera">
+
+                    <span>诺心公告</span>
+                    <span>关心诺心</span>
+                    <span>客服服务</span>
+                    <span>食品经营许可证</span>
+                    <span>生产许可证</span>
+                    <span>预付费卡协议</span>
+                    <span>联系我们</span>
+                </div>
+                <div class="footerb">
+                    <span>如有问题，请联系客服。</span>
+                    <span>工作时间：9:00-21:00</span>
+                </div>
+                <div class="footerc">
+                    <span>copyright©2010-2019</span>
+                    <span>诺心lecake.com版权所有</span>
+                    <span>泸ICP备10211730号</span>
+                    <span>沪公网安备31010402003364</span>
+
+                </div>
+            </div>
+            <div class="footerd">
+                <p>
+                    <img src="../img/qrCode.png" />
+                </p>
+                <p>关注微信公众号</p>
+                <p>可进入微商城</p>
+            </div>
+        </div>
+        <div class="kefu">
+            <p>
+                <img src="../img/kefu.jpg" />
+                <span>在线客服</span>
+            </p>
+            <p>
+                <img src="../img/fanhui2.jpg">
+                <span>返回顶部</span>
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+
+</html>
+<script type="text/javascript">
+    var xh = new XMLHttpRequest();
+    xh.open("get", "../json/listCake.json", "true");
+    xh.onreadystatechange = function () {
+        if (xh.readyState == 4 && xh.status == 200) {
+            //		console.log(xh.responseText);
+            var data = JSON.parse(xh.responseText);
+            show(data);
+        }
+    }
+    xh.send();
+
+    function show(data) {
+        for (var i = 0; i < data.length; i++) {
+           	var str="";
+           	var aDom=document.createElement("a");
+           	aDom.href="login.html";
+           	str+=` <div class="dg">
+                <div class="dga">
+                    <div class="dog">
+                        <div class="daA">
+                            <img src="${data[i].urlA}" alt="" />
+                        </div>
+                        <div class="pig">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>${data[i].name}</li>
+                        <div class="kuang3">
+                            <p>198蛋糕卡免差</p>
+                        </div>
+                        <li>${data[i].title}</li>
+                    </ul>
+                    <ul>
+                        <li>￥${data[i].price}</li>
+                        <li>加入购物车></li>
+                    </ul>
+                </div>
+            </div>`;
+            aDom.innerHTML=str;
+         	document.getElementsByTagName("section")[0].appendChild(aDom); 
+        }
+    }
+</script>

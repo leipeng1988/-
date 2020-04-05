@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nuoxin.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <p>
+            <img src="../img/logo.png" alt="">
+        </p>
+    </header>
+    <section>
+        <div class="section">
+            <div class="section1">
+                <span id="a">手机验证登录</span>
+                <span>|</span>
+                <span id="b">账户密码登录</span>
+            </div>
+            <div class="section-content">
+                <div class="section2B" id="btn1" style="display: block;">
+                    <div class="section2B1">
+                        <span class="iconfont icon-shouji"></span>
+                        <input type="text" placeholder="手机号码">
+                    </div>
+                    <div class="section2B2">
+                        <div>
+                            <span class="iconfont icon-key"></span>
+                            <input type="text" placeholder="请输入验证码" class="input">
+                        </div>
+                        <div id="sj">
+                            <span id="msg">CTRL</span>
+                            <span>换一个</span>
+                        </div>
+                    </div>
+                    <div class="section2B3">
+                        <div class="section2B31">
+                            <span class="iconfont icon-key"></span>
+                            <input type="text" placeholder="请输入验证码" class="input">
+                        </div>
+                        <input type="button" value="发送验证码" id="fs">
+                    </div>
+                    <a href="zhuce.html" class="btn">立即登录</a>
+                    <div class="section4">
+                        <span>忘记密码</span>
+                        <span>还没有账号?</span>
+                        <span>立即注册</span>
+                    </div>
+                    <div class="section5">
+                        <span class="section6"></span>
+                        <span>其他登录方式</span>
+                        <span class="section6"></span>
+                    </div>
+                    <div class="section7">
+                        <img src="../img/weixin.jpg" alt="">
+                        <img src="../img/qq.jpg" alt="">
+                    </div>
+                </div>
+                <div class="section2" id="btn">
+                    <div class="section3">
+                        <span class="iconfont icon-shouji"></span>
+                        <input type="text" placeholder="请输入账号">
+                    </div>
+                    <div class="section3">
+                        <span class="iconfont icon-xinghao"></span>
+                        <input type="text" placeholder="请输入密码">
+                    </div>
+                    <a href="" class="btn">立即登录</a>
+                    <div class="section4">
+                        <span>忘记密码</span>
+                        <span>还没有账号?</span>
+                        <span>立即注册</span>
+                    </div>
+                    <div class="section5">
+                        <span class="section6"></span>
+                        <span>其他登录方式</span>
+                        <span class="section6"></span>
+                    </div>
+                    <div class="section7">
+                        <img src="../img/weixin.jpg" alt="">
+                        <img src="../img/qq.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerLeft">
+            <div class="footera">
+
+                <span>诺心公告</span>
+                <span>关心诺心</span>
+                <span>客服服务</span>
+                <span>食品经营许可证</span>
+                <span>生产许可证</span>
+                <span>预付费卡协议</span>
+                <span>联系我们</span>
+            </div>
+            <div class="footerb">
+                <span>如有问题，请联系客服。</span>
+                <span>工作时间：9:00-21:00</span>
+            </div>
+            <div class="footerc">
+                <span>copyright©2010-2019</span>
+                <span>诺心lecake.com版权所有</span>
+                <span>泸ICP备10211730号</span>
+                <span>沪公网安备31010402003364</span>
+            </div>
+        </div>
+        <div class="footerRight">
+            <p>
+                <img src="../img/qrCode.png" />
+            </p>
+            <p>关注微信公众号</p>
+            <p>可进入微商城</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    var a1 = document.getElementById("a");
+    var con = document.getElementById("btn1");
+    a1.onclick = function () {
+        if (con1.style.display == "block") {
+            con.style.display = "block";
+            con1.style.display = "none";
+        }
+
+    }
+    var b1 = document.getElementById("b");
+    var con1 = document.getElementById("btn");
+    b1.onclick = function () {
+        if (con.style.display == "block") {
+            con1.style.display = "block";
+            con.style.display = "none";
+        }
+    }
+    function x(n){
+    var s="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var ret=""; 
+    for(var i=0;i<n;i++) {
+        var index = Math.floor(Math.random() * 26); 
+        ret += s.charAt(index);
+    }
+        return ret; 
+}
+var d=document.getElementById("sj");
+d.onclick=function show(){
+    document.getElementById("msg").innerHTML=x(4);
+}
+</script>
